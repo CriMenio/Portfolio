@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfilo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="dekstop-nav">
+        <div class="logo">Krishnakant </div>
+        <div>
+            <ul class="nav-link">
+                <li><a href="#about" >About</a></li>
+                <li><a href="#Experince" >Experince</a></li>
+                <li><a href="#Projects" >Projects</a></li>
+                <li><a href="#Contact" >Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Krishnakant</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experince" onclick="toggleMenu()">Experince</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-img.jpeg" alt="profile picture" class="profile-img">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Krishnakant </h1>
+            <p class="section__text__p2">Full Stack Developer | Cloud Computing Enthusiast</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Profile-1.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contact' ">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png"
+                alt="My linkedIn Profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/krishnakant-soni-631691207/'"
+                />
+
+                <img 
+                src="./assets/github.png"
+                alt="My github Profile"
+                class="icon"
+                onclick="location.href='https://github.com/CriMenio?tab=repositories'"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know Me</p>
+        <h1 class="title">About me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/hehe.png"
+                    alt="Profile picture"
+                    class="about-pic"
+                    />
+                </div>
+                <div class="about-detail-container">
+                    <div class="text-container">
+                        <p>I am an ambitious and motivated computer science student with a strong focus on software development and 
+                            expertise in cloud computing. With a passion for coding, design, innovation, and experimentation, I 
+                            thrive on challenges and continuously seek to expand my skill set. 
+                        </p>
+                    </div>
+                    <div class="about-col-2">
+                            <div class="tab-title">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experice')" >Internships</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('course')">Courses</p>
+                            </div>
+    
+                            <div class="tab-contains active-tab" id="skills">
+                                <ul>
+                                    <li><span>WEB DEVELOPMENT</span><br><i>HTML, CSS, JS, PHP, Bootstrap, Pthon, Java, MySQL & Figma</i></li>
+                                    <li><span>NETWORING</span><br><i>Protocols, Topology, Routing, Security, Subnetting, Switching, Firewalls & Troubleshooting </i></li>
+                                    <li><span>AWS CLOUD</span><br><i>Ec2, Route53, VPC, S3, ELB, ECS, Cloud Watch, IAM & etc</i></li>
+                                </ul>
+                            </div>
+    
+                            <div class="tab-contains" id="experice">
+                                <ul>
+                                    <li><span>WEB DEVELOPMENT</span><br><i>HTML, CSS, Js & Bootstrap at EQUITABLE IT SERVICE</i></li>
+                                    <li><span>AWS CLOUD</span><br> <i>AWS Services  at AWS re/START(Accenture)</i></li>
+                                    <li><span>CLOUD ENGINEER</span><br><i>Cloud Services  at TECH-A-INTERN</i> </li>
+                                </ul>
+                            </div>
+    
+                            <div class="tab-contains" id="education">
+                                <ul>
+                                    <li><span>BSC. COMPUTER SCIENCE</span><br><i> Pillai College of Art, Commerce and Science (2020-2023)</i></li>
+                                    <li><span>HSC</span><br><i>SPV Jr. College (2018-2020)</i></li>
+                                    <li><span>SSC</span><br><i>S.E.S High School (2020)</i></li>
+                                </ul>
+                            </div>
+    
+                            <div class="tab-contains" id="course">
+                                <ul>
+                                    <li><span>LOGIC BUILDING USING JAVA</span><br><i>Pillai College of Arts, Commerce & Science</i></li>
+                                    <li><span>PYTHON</span><br><i>Coursera</i></li>
+                                    <li><span>AWS CLOUD PRACTITIONER</span><br><i>AWS Certified</i></li>
+                                    <li><span>CYBER SECURITY & DIGITEL FORENSICS</span><br><i>Pillai College of Arts, Commerce & Science</i></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+        <img 
+        src="./assets/white-arrow-1.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Experince'"
+        >
+    </section>
+
+    <section id="Experince">
+        <p class="section__text__p1">Explore Me</p>
+        <h1 class="title">Experince</h1>
+        <div class="experince-detail-container">
+            <div class="about-container">
+                <div class="detail-container">
+                    <h2 class="experince-sub-title"> Development</h2>
+                    <div class="artical-container">
+                        <article>
+                            <img src="./assets//verify.png" 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experinced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets//verify.png" 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experinced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets//verify.png" 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Java Script</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets//verify.png" 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Word Press</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets//verify.png" 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>PYTHON</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets//verify.png" 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>JAVA</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="detail-container">
+                    <h2 class="experince-sub-title">AWS Services</h2>
+                    <div class="artical-container">
+                        <article>
+                            <img src="./assets//verify.png" 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>S3</h3>
+                                <p>Hands On</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets//verify.png" 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>VPC</h3>
+                                <p>Hands On</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets//verify.png" 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>EC2</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets//verify.png" 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>IAM</h3>
+                                <p>Hands On</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets//verify.png" 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>DynamoDB</h3>
+                                <p>Hands On</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets//verify.png " 
+                            alt="Experince Icon" 
+                            class="icon"
+                            >
+                            <div>
+                                <h3>RDS</h3>
+                                <p>Hands On</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/white-arrow-1.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Projects'"
+        >
+    </section>
+
+    <section id="Projects">
+        <p class="section__text__p1">Browse My Projects</p>
+        <h1 class="title">Projects</h1>
+        <div class="experince-detail-contianer">
+            <div class="about-container">
+                <div class="detail-container color-container">
+                    <div class="artical-container">
+                        <img src="./assets/sticky-notes-1.png" 
+                        alt="project-1"
+                        class="project-img">
+                    </div>
+                    <h2 class="experince-sub-title project-title">Sticky Notes</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/CriMenio/StickyNotes'"
+                        >GitHub
+                        </button>
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/CriMenio/StickyNotes'"
+                        >Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="detail-container color-container">
+                    <div class="artical-container">
+                        <img src="./assets/project-3-Solor.png" 
+                        alt="project-2"
+                        class="project-img">
+                    </div>
+                    <h2 class="experince-sub-title project-title">Solor Service</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/CriMenio/B.S-Solar'"
+                        >GitHub
+                        </button>
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/CriMenio/B.S-Solar'"
+                        >Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="detail-container color-container">
+                    <div class="artical-container">
+                        <img src="./assets/project-3-aws.png" 
+                        alt="project-3"
+                        class="project-img">
+                    </div>
+                    <h2 class="experince-sub-title project-title">Face Detection Attendance System</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/CriMenio/Face-Detection-Attendance-Management-System'"
+                        >GitHub
+                        </button>
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/CriMenio/Face-Detection-Attendance-Management-System'"
+                        >Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/white-arrow-1.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Contact'"
+        >
+    </section>
+
+    <section id="Contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets//email.png" 
+                alt="email icon"
+                class="icon contact-icon email-icon"
+                >
+                <p><a href="mailto:exampleemail@gmail.com ">kksoi0203@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets//linkedin.png" 
+                alt="linkedin icon"
+                class="icon contact-icon"
+                >
+                <p><a href="https://www.linkedin.com/in/krishnakant-soni-631691207/">linkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-contianer">
+                <ul class="nav-link">
+                    <li><a href="#About" >About</a></li>
+                    <li><a href="#Experince" >Experince</a></li>
+                    <li><a href="#Projects" >Projects</a></li>
+                    <li><a href="#Contact" >Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 krishnakant Soni. <br>All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontains =document.getElementsByClassName("tab-contains");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontain of tabcontains){
+                tabcontain.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
